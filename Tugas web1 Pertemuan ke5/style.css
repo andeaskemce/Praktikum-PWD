@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #dcecf5;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #34566b;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34566b;
+    margin-left: 15px;
+}
+
+.pembuka {
+    padding: 65px 8%;
+    min-height: 450px;
+    background: #eaf3f7;
+}
+
+.pembuka h1 {
+    font-size: 38px;
+    color: #34566b;
+}
+
+.pembuka p {
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.konten {
+    padding: 50px 8%;
+    min-height: 650px;
+}
+
+.galeri {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.foto {
+    background: white;
+    padding: 12px;
+    width: 230px;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px #ddd;
+}
+
+.foto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.foto p {
+    margin-bottom: 5px;
+}
+
+.cerita {
+    background: #eaf3f7;
+    padding: 35px;
+    margin-top: 40px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.footer {
+    background: #34566b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#tombolAtas {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: #34566b;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+#tombolAtas.muncul {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+#tombolAtas:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .galeri {
+        flex-direction: column;
+    }
+
+    .foto {
+        width: auto;
+    }
+}
